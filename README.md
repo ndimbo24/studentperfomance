@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Student Performance Analytics Dashboard
 
 A multi-page analytics dashboard built with Dash, Plotly, Pandas, and
@@ -102,3 +103,6 @@ and `Distance_from_Home`. `utils/data_loader.py` imputes categorical
 gaps with the column mode and numeric gaps with the column median, and
 drops exact duplicate rows, so every page works from one consistent,
 clean copy of the data.
+=======
+# studentperfomance
+>>>>>>> 644738be4c345d64cbd54b6a7cbce7d1db32b201
