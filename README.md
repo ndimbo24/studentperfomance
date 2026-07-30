@@ -23,34 +23,34 @@ exam score with a trained ML model.
 
 ```
 student_performance_dashboard/
-├── app.py                  # Entry point: layout shell + page routing
+├── app.py                  
 ├── requirements.txt
-├── Procfile                 # gunicorn start command (Render/Railway)
-├── runtime.txt               # pinned Python version
+├── Procfile                 
+├── runtime.txt               
 ├── assets/
-│   └── style.css              # all custom CSS (auto-loaded by Dash)
+│   └── style.css              
 ├── data/
 │   └── StudentPerformanceFactors.csv
-├── components/                # reusable, callback-free UI pieces
+├── components/                
 │   ├── sidebar.py
 │   ├── header.py
 │   ├── cards.py
 │   └── footer.py
-├── pages/                     # one module per route (dash.register_page)
-│   ├── dashboard.py            # "/"
-│   ├── analytics.py            # "/analytics"
-│   ├── explorer.py             # "/explorer"
-│   ├── ml_prediction.py        # "/predict"
-│   └── about.py                 # "/about"
+├── pages/                     
+│   ├── dashboard.py            
+│   ├── analytics.py            
+│   ├── explorer.py             
+│   ├── ml_prediction.py        
+│   └── about.py                 
 ├── utils/
-│   ├── data_loader.py           # load/clean/filter the dataset (cached)
-│   ├── chart_theme.py           # shared Plotly styling
-│   └── ml_utils.py              # loads model artifacts, runs predictions
+│   ├── data_loader.py           
+│   ├── chart_theme.py           
+│   └── ml_utils.py              
 └── models/
-    ├── train_model.py           # offline training script
-    ├── model.joblib              # trained RandomForestRegressor
-    ├── scaler.joblib              # StandardScaler for numeric features
-    └── encoders.joblib            # LabelEncoders + feature-order metadata
+    ├── train_model.py           
+    ├── model.joblib              
+    ├── scaler.joblib              
+    └── encoders.joblib            
 ```
 
 ## Local Setup
@@ -105,4 +105,3 @@ drops exact duplicate rows, so every page works from one consistent,
 clean copy of the data.
 =======
 # studentperfomance
->>>>>>> 644738be4c345d64cbd54b6a7cbce7d1db32b201
